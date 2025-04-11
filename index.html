@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>瀏覽人數看板</title>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .count {
+      font-size: 2.5rem;
+      margin: 20px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 1rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 網站瀏覽統計</h1>
+  <button onclick="handleAuthClick()">登入以查看統計</button>
+  <div id="stats" style="display: none;">
+    <div class="count">👁️ 總瀏覽數：<span id="totalViews">讀取中...</span></div>
+    <div class="count">⏰ 今日瀏覽數：<span id="todayViews">讀取中...</span></div>
+  </div>
+</body>
+</html>

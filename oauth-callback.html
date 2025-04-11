@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>OAuth 回傳</title></head>
+<body>
+<script>
+  if (window.opener) {
+    window.opener.postMessage(location.href, "*");
+    window.close();
+  } else {
+    document.body.innerText = "請關閉此視窗";
+  }
+</script>
+</body>
+</html>

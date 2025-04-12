@@ -3,11 +3,10 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>NTV11 畢展網站統計</title>
+  <title>NTV11 畢展統計</title>
   <script src="script.js" defer></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
-
     body {
       background: #101010;
       color: #f0f0f0;
@@ -20,44 +19,15 @@
       margin: 0;
       text-align: center;
     }
-
     h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+      font-size: 1.6rem;
+      margin-bottom: 20px;
       letter-spacing: 2px;
     }
-
-    p.description {
-      color: #bbb;
-      margin-bottom: 30px;
-    }
-
-    button {
-      background-color: #fff;
-      color: #000;
-      font-size: 1rem;
-      font-weight: bold;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #ddd;
-    }
-
     .count {
       font-size: 1.8rem;
-      margin: 15px 0;
+      margin: 12px 0;
     }
-
-    #stats {
-      margin-top: 30px;
-    }
-
     .footer {
       position: absolute;
       bottom: 16px;
@@ -67,15 +37,11 @@
   </style>
 </head>
 <body>
-  <h1>📊 NTV11 畢展統計看板</h1>
-  <p class="description">登入後可查看目前網站的瀏覽總數與今日流量</p>
-  <button onclick="handleAuthClick()">登入查看統計</button>
-
+  <h1>📊 網站流量總覽</h1>
   <div id="stats" style="display: none;">
     <div class="count">👁️ 總瀏覽數：<span id="totalViews">讀取中...</span></div>
     <div class="count">⏰ 今日瀏覽數：<span id="todayViews">讀取中...</span></div>
   </div>
-
-  <div class="footer">Powered by GA4 · Designed for ISU FILM NTV 11th</div>
+  <div class="footer">ISU FILM NTV 11th · Powered by GA4</div>
 </body>
 </html>

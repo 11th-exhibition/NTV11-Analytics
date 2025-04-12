@@ -5,7 +5,7 @@ const GA4_PROPERTY_ID = '483124520';
 let tokenClient;
 let accessToken = null;
 
-function handleAuthClick() {
+window.onload = () => {
   tokenClient = google.accounts.oauth2.initTokenClient({
     client_id: CLIENT_ID,
     scope: 'https://www.googleapis.com/auth/analytics.readonly',
@@ -15,8 +15,9 @@ function handleAuthClick() {
       await fetchAnalyticsData();
     },
   });
-  tokenClient.requestAccessToken();
-}
+
+  tokenClient.requestAccessToken({ prompt: '' });
+};
 
 async function fetchAnalyticsData() {
   const headers = { Authorization: `Bearer ${accessToken}` };

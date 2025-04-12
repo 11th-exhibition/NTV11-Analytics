@@ -3,14 +3,13 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>NTV11 畢展流量統計</title>
+  <title>NTV11 網站流量</title>
   <script src="script.js" defer></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 
     body {
-      background: url('https://11th-exhibition.github.io/PosterForWeb/posters/poster1.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background: #f7f7f7;
       font-family: 'Noto Sans TC', sans-serif;
       margin: 0;
       padding: 0;
@@ -18,35 +17,36 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      backdrop-filter: blur(8px);
+      text-align: center;
     }
 
     .card {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 40px;
+      background: #fff;
+      padding: 40px 30px;
       border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      text-align: center;
-      color: #fff;
-      max-width: 320px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      max-width: 340px;
+      width: 100%;
+      border: 1px solid #eee;
     }
 
     .card h1 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
+      font-size: 1.4rem;
+      margin-bottom: 25px;
+      color: #222;
     }
 
     .count {
       font-size: 2rem;
-      margin: 20px 0;
+      margin: 18px 0;
       font-weight: bold;
+      color: #000;
     }
 
     .footer {
       margin-top: 20px;
       font-size: 0.75rem;
-      color: #bbb;
+      color: #888;
     }
   </style>
 </head>

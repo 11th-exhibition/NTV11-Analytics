@@ -3,7 +3,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>ISUFilm&TV流量看板</title>
+  <title>NTV11 流量看板（黑底反白）</title>
   <script src="script.js" defer></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
@@ -16,41 +16,42 @@
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px 16px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 16px 12px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
       text-align: center;
-      max-width: 240px;
-      margin: 40px auto;
+      max-width: 220px;
+      margin: 24px auto;
     }
 
     .card h1 {
-      font-size: 1rem;
-      margin-bottom: 20px;
-      color: #222;
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+      color: #fff;
+      font-weight: 700;
     }
 
     .count {
       font-size: 1.2rem;
-      margin: 18px 0;
+      margin: 12px 0;
       font-weight: bold;
-      color: #111;
+      color: #fff;
     }
 
     .footer {
-      margin-top: 20px;
-      font-size: 0.7rem;
-      color: #777;
+      margin-top: 12px;
+      font-size: 0.65rem;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
   <div class="card" id="stats" style="display: none;">
     <h1>📊 網站流量</h1>
-    <div class="count">總瀏覽數：<span id="totalViews">讀取中...</span></div>
-    <div class="count">⏰今日瀏覽數：<span id="todayViews">讀取中...</span></div>
-    <div class="footer">Isu影視系11th畢展· Powered by GA4</div>
+    <div class="count">👁️ <span id="totalViews">--</span></div>
+    <div class="count">⏰ <span id="todayViews">--</span></div>
+    <div class="footer">NTV11 · Powered by GA4</div>
   </div>
 </body>
 </html>

@@ -3,45 +3,59 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>NTV11 畢展統計</title>
+  <title>NTV11 畢展流量統計</title>
   <script src="script.js" defer></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
     body {
-      background: #101010;
-      color: #f0f0f0;
+      background: url('https://11th-exhibition.github.io/PosterForWeb/posters/poster1.jpg') no-repeat center center fixed;
+      background-size: cover;
       font-family: 'Noto Sans TC', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
+      backdrop-filter: blur(8px);
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       text-align: center;
+      color: #fff;
+      max-width: 320px;
     }
-    h1 {
-      font-size: 1.6rem;
+
+    .card h1 {
+      font-size: 1.5rem;
       margin-bottom: 20px;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
+
     .count {
-      font-size: 1.8rem;
-      margin: 12px 0;
+      font-size: 2rem;
+      margin: 20px 0;
+      font-weight: bold;
     }
+
     .footer {
-      position: absolute;
-      bottom: 16px;
-      font-size: 0.8rem;
-      color: #666;
+      margin-top: 20px;
+      font-size: 0.75rem;
+      color: #bbb;
     }
   </style>
 </head>
 <body>
-  <h1>📊 網站流量總覽</h1>
-  <div id="stats" style="display: none;">
+  <div class="card" id="stats" style="display: none;">
+    <h1>📊 NTV11 網站流量</h1>
     <div class="count">👁️ 總瀏覽數：<span id="totalViews">讀取中...</span></div>
     <div class="count">⏰ 今日瀏覽數：<span id="todayViews">讀取中...</span></div>
+    <div class="footer">ISU FILM NTV 11th · Powered by GA4</div>
   </div>
-  <div class="footer">ISU FILM NTV 11th · Powered by GA4</div>
 </body>
 </html>

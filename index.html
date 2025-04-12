@@ -3,59 +3,54 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>FilmnTV11th瀏覽人次</title>
+  <title>NTV11 流量看板（透明背景）</title>
   <script src="script.js" defer></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 
-    body {
-      background: #f7f7f7;
+    html, body {
+      background: transparent;
       font-family: 'Noto Sans TC', sans-serif;
       margin: 0;
       padding: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
     }
 
     .card {
-      background: #fff;
-      padding: 40px 30px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 36px 24px;
       border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-      max-width: 340px;
-      width: 100%;
-      border: 1px solid #eee;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      max-width: 320px;
+      margin: 40px auto;
     }
 
     .card h1 {
-      font-size: 1.4rem;
-      margin-bottom: 25px;
+      font-size: 1.25rem;
+      margin-bottom: 20px;
       color: #222;
     }
 
     .count {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin: 18px 0;
       font-weight: bold;
-      color: #000;
+      color: #111;
     }
 
     .footer {
       margin-top: 20px;
-      font-size: 0.75rem;
-      color: #888;
+      font-size: 0.7rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <div class="card" id="stats" style="display: none;">
     <h1>📊 網站流量</h1>
-    <div class="count">總瀏覽數：<span id="totalViews">讀取中...</span></div>
-    <div class="count">⏰今日瀏覽數：<span id="todayViews">讀取中...</span></div>
-    <div class="footer">ISU FILM&TV 11th · Powered by GA4</div>
+    <div class="count">👁️ 總瀏覽數：<span id="totalViews">讀取中...</span></div>
+    <div class="count">⏰ 今日瀏覽數：<span id="todayViews">讀取中...</span></div>
+    <div class="footer">NTV11 · Powered by GA4</div>
   </div>
 </body>
 </html>

@@ -4,7 +4,7 @@ async function fetchSheetData() {
   try {
     const res = await fetch(sheetURL);
     const text = await res.text();
-    const json = JSON.parse(text.substr(47).slice(0, -2)); // 去除 Google 回傳前後包裝
+    const json = JSON.parse(text.substr(47).slice(0, -2));
     const rows = json.table.rows;
     if (rows.length > 0) {
       const latest = rows[rows.length - 1].c;
